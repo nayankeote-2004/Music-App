@@ -24,7 +24,6 @@ class CustomSearchBar extends StatelessWidget {
           ),
           Icon(Icons.mic, color: Colors.grey[400]),
           const SizedBox(width: 10),
-          // Account icon removed
         ],
       ),
     );

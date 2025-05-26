@@ -9,14 +9,12 @@ class ServiceDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Get the status bar height
     final statusBarHeight = MediaQuery.of(context).padding.top;
     
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          // Status bar height + back button
           Container(
             padding: EdgeInsets.only(
               top: statusBarHeight + 8,
@@ -42,7 +40,6 @@ class ServiceDetailScreen extends ConsumerWidget {
             ),
           ),
           
-          // Content
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(16.0),

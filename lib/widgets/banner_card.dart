@@ -28,7 +28,6 @@ class BannerCard extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          // Search bar and account icon row
           Positioned(
             top: 0,
             left: 0,
@@ -37,13 +36,12 @@ class BannerCard extends StatelessWidget {
               children: [
                 if (searchBar != null) Expanded(child: searchBar!),
                 if (searchBar != null && accountIcon != null)
-                  const SizedBox(width: 12), // Space between search and account
+                  const SizedBox(width: 12), 
                 if (accountIcon != null) accountIcon!,
               ],
             ),
           ),
 
-          // Content - moved down to accommodate search bar and account icon
           Padding(
             padding: EdgeInsets.only(top: searchBar != null ? 80 : 0),
             child: Center(
@@ -95,14 +93,13 @@ class BannerCard extends StatelessWidget {
             ),
           ),
 
-          // Vinyl record image - positioned at left start
           Positioned(
             left: -20,
             bottom: -20,
             child: Opacity(
               opacity: 0.8,
               child: Container(
-                width: screenWidth * 0.25, // Responsive width
+                width: screenWidth * 0.25, 
                 height: 150,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -114,12 +111,11 @@ class BannerCard extends StatelessWidget {
             ),
           ),
           
-          // Piano keys image - positioned at right start
           Positioned(
             right: -40,
             bottom: -15,
             child: Container(
-              width: screenWidth * 0.3, // Responsive width
+              width: screenWidth * 0.3, 
               height: 150,
               decoration: const BoxDecoration(
                 image: DecorationImage(

@@ -14,15 +14,12 @@ class HomeScreen extends ConsumerWidget {
     final selectedIndex = ref.watch(selectedTabProvider);
     final servicesAsyncValue = ref.watch(servicesStreamProvider);
     
-    // Get the status bar height for internal padding
     final statusBarHeight = MediaQuery.of(context).padding.top;
 
     return Scaffold(
       backgroundColor: Colors.black,
-      // No appBar, so content can extend to status bar
       body: Column(
         children: [
-          // Banner card starts from the very top of the screen
           BannerCard(
             statusBarHeight: statusBarHeight,
             searchBar: Padding(
@@ -44,7 +41,7 @@ class HomeScreen extends ConsumerWidget {
             ),
           ),
 
-          // Remaining content
+          
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -85,7 +82,7 @@ class HomeScreen extends ConsumerWidget {
                         );
                       },
                       loading: () => ListView.builder(
-                        itemCount: 5, // Show 5 placeholder items while loading
+                        itemCount: 5, 
                         padding: EdgeInsets.zero,
                         itemBuilder: (context, index) {
                           return Padding(
@@ -101,10 +98,9 @@ class HomeScreen extends ConsumerWidget {
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  // Image placeholder
                                   Container(
                                     width: 80,
-                                    height: 80, // Match height for a square aspect ratio
+                                    height: 80, 
                                     decoration: BoxDecoration(
                                       color: Colors.grey.shade800,
                                       borderRadius: const BorderRadius.only(
@@ -114,7 +110,6 @@ class HomeScreen extends ConsumerWidget {
                                     ),
                                   ),
                                   const SizedBox(width: 12),
-                                  // Content placeholders
                                   Expanded(
                                     child: Padding(
                                       padding: const EdgeInsets.symmetric(vertical: 12.0),
