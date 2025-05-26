@@ -17,14 +17,14 @@ Below are some UI screenshots of the app:
 
 | Home Screen | Player Screen | Playlist Screen |
 |-------------|--------------|----------------|
-| ![Home](assets/screenshots/1.jpg) | ![Player](assets/screenshots/2.jpg) | ![Playlist](assets/screenshots/3.jpg) |
+| ![Home](assets/screenshots/1.jpg) | ![Search Bar](assets/screenshots/2.jpg) | ![Deatail of card Screen](assets/screenshots/3.jpg) |
 
 > _Screenshots are located in `assets/screenshots/`._
 
 ## Demo Video
 
 Watch the full demo of the app on Google Drive:  
-[View Demo Video](https://drive.google.com/your-demo-video-link)
+[View Demo Video](https://drive.google.com/file/d/1PbsJNzFaXF_O94WEohUrLquYHYqm_CwO/view?usp=sharing)
 
 ## Getting Started
 
